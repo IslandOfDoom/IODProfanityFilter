@@ -10,8 +10,8 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *inputTextField;
-@property (weak, nonatomic) IBOutlet UILabel *filteredTextLabel;
+@property (assign, nonatomic) IBOutlet UITextField *inputTextField;
+@property (assign, nonatomic) IBOutlet UILabel *filteredTextLabel;
 - (IBAction)filter:(id)sender;
 
 @end

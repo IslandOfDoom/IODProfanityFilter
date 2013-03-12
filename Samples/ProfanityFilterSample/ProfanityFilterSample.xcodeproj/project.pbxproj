@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12059DD916EEAE6400528A2C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12059DD716EEAE6400528A2C /* ViewController.xib */; };
 		FD2EE20716DEE916006A5CD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2EE20616DEE916006A5CD1 /* UIKit.framework */; };
 		FD2EE20916DEE916006A5CD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2EE20816DEE916006A5CD1 /* Foundation.framework */; };
 		FD2EE20B16DEE916006A5CD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2EE20A16DEE916006A5CD1 /* CoreGraphics.framework */; };
@@ -16,7 +17,6 @@
 		FD2EE21916DEE916006A5CD1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE21816DEE916006A5CD1 /* Default.png */; };
 		FD2EE21B16DEE916006A5CD1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE21A16DEE916006A5CD1 /* Default@2x.png */; };
 		FD2EE21D16DEE916006A5CD1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE21C16DEE916006A5CD1 /* Default-568h@2x.png */; };
-		FD2EE22016DEE916006A5CD1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE21E16DEE916006A5CD1 /* MainStoryboard.storyboard */; };
 		FD2EE22316DEE916006A5CD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE22216DEE916006A5CD1 /* ViewController.m */; };
 		FD2EE23B16DEE987006A5CD1 /* NSString+IODProfanityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2EE22C16DEE987006A5CD1 /* NSString+IODProfanityFilter.m */; };
 		FD2EE23C16DEE987006A5CD1 /* IODProfanityWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD2EE22E16DEE987006A5CD1 /* IODProfanityWords.txt */; };
@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12059DD816EEAE6400528A2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		FD2EE20316DEE916006A5CD1 /* ProfanityFilterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfanityFilterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2EE20616DEE916006A5CD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD2EE20816DEE916006A5CD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,7 +38,6 @@
 		FD2EE21816DEE916006A5CD1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FD2EE21A16DEE916006A5CD1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FD2EE21C16DEE916006A5CD1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FD2EE21F16DEE916006A5CD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		FD2EE22116DEE916006A5CD1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FD2EE22216DEE916006A5CD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD2EE22B16DEE987006A5CD1 /* NSString+IODProfanityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IODProfanityFilter.h"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				FD2EE21516DEE916006A5CD1 /* AppDelegate.h */,
 				FD2EE21616DEE916006A5CD1 /* AppDelegate.m */,
-				FD2EE21E16DEE916006A5CD1 /* MainStoryboard.storyboard */,
+				12059DD716EEAE6400528A2C /* ViewController.xib */,
 				FD2EE22116DEE916006A5CD1 /* ViewController.h */,
 				FD2EE22216DEE916006A5CD1 /* ViewController.m */,
 				FD2EE20D16DEE916006A5CD1 /* Supporting Files */,
@@ -218,8 +218,8 @@
 				FD2EE21916DEE916006A5CD1 /* Default.png in Resources */,
 				FD2EE21B16DEE916006A5CD1 /* Default@2x.png in Resources */,
 				FD2EE21D16DEE916006A5CD1 /* Default-568h@2x.png in Resources */,
-				FD2EE22016DEE916006A5CD1 /* MainStoryboard.storyboard in Resources */,
 				FD2EE23C16DEE987006A5CD1 /* IODProfanityWords.txt in Resources */,
+				12059DD916EEAE6400528A2C /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,20 +241,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		12059DD716EEAE6400528A2C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12059DD816EEAE6400528A2C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
 		FD2EE20F16DEE916006A5CD1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FD2EE21016DEE916006A5CD1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FD2EE21E16DEE916006A5CD1 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD2EE21F16DEE916006A5CD1 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		FD2EE22E16DEE987006A5CD1 /* IODProfanityWords.txt */ = {
@@ -302,7 +302,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -326,7 +326,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -374,6 +374,7 @@
 				FD2EE22816DEE916006A5CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
