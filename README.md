@@ -15,7 +15,7 @@ used by a lot of kids. Nothing turned up for iOS, so here it is!
 IODProfanityFilter only matches whole words and does not attempt to check for l33t-speak or anything like that.
 
 The filter works on the user's locale and supports the following languages so far:
-German, English, Spanish, French, Italian, Japanese, Dutch, Portuguese, Russian, and Chinese.
+German, English, Spanish, French, Italian, Japanese, Dutch, Polish, Portuguese, Russian, and Chinese.
 
 Installation:
 -------------

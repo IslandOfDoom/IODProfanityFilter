@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1A699F017DB6D2B002B88F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text; name = pl; path = pl.lproj/IODProfanityWords.txt; sourceTree = "<group>"; };
 		FD2EE20316DEE916006A5CD1 /* ProfanityFilterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfanityFilterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2EE20616DEE916006A5CD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD2EE20816DEE916006A5CD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -198,6 +199,7 @@
 				pt,
 				ru,
 				zh,
+				pl,
 			);
 			mainGroup = FD2EE1FA16DEE916006A5CD1;
 			productRefGroup = FD2EE20416DEE916006A5CD1 /* Products */;
@@ -270,6 +272,7 @@
 				FD2EE23816DEE987006A5CD1 /* pt */,
 				FD2EE23916DEE987006A5CD1 /* ru */,
 				FD2EE23A16DEE987006A5CD1 /* zh */,
+				A1A699F017DB6D2B002B88F9 /* pl */,
 			);
 			name = IODProfanityWords.txt;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				FD2EE22816DEE916006A5CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
