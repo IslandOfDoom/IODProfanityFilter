@@ -31,4 +31,11 @@
  */
 + (NSString*)stringByFilteringString:(NSString*)string withReplacementString:(NSString*)replacementString;
 
+
+/**
+ Reset offending word set to initial state. If allLanguages is YES, fill word set with offending words from all supported languages, if NO fill only with words from current locale.
+ */
++ (void) initWordSetForAllLanguages: (BOOL) allLanguages;
+
+
 @end

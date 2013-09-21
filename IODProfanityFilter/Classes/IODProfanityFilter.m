@@ -28,6 +28,25 @@ static NSMutableSet *IODProfanityFilterWordSet;
     return IODProfanityFilterWordSet;
 }
 
++ (void) initWordSetForAllLanguages:(BOOL)allLanguages{
+    NSStringEncoding encoding;
+    NSError *error;
+    IODProfanityFilterWordSet = nil;
+    if (allLanguages) {
+        IODProfanityFilterWordSet = [NSMutableSet new];
+        for (NSString *language in [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"]) {
+            NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:language ofType:@"lproj"]];
+            if (bundle == nil)
+                continue;
+            NSString *fileName = [bundle pathForResource:@"IODProfanityWords" ofType:@"txt"];
+            NSString *wordStr = [NSString stringWithContentsOfFile:fileName usedEncoding:&encoding error:&error];
+            NSArray *wordArray = [wordStr componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+            [IODProfanityFilterWordSet addObjectsFromArray:wordArray];
+        }
+    }else
+        [self wordSet];
+}
+
 + (NSArray*)rangesOfFilteredWordsInString:(NSString*)string
 {
     NSMutableArray *result = [NSMutableArray array];
