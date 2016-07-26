@@ -19,6 +19,6 @@
     "IODProfanityFilter/Classes",
     "IODProfanityFilter/Classes/**/*.{h,m}"
   ],
-  "resources": "IODProfanityFilter/Resources/*",
+  "resources": "IODProfanityFilter/Resources/**",
   "requires_arc": true
 }

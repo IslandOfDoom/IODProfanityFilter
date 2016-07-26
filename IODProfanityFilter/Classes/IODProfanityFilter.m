@@ -19,7 +19,7 @@ static NSMutableSet *IODProfanityFilterWordSet;
     {
         NSStringEncoding encoding;
         NSError *error;
-        NSString *fileName = [[NSBundle mainBundle] pathForResource:@"IODProfanityWords" ofType:@"txt"];
+        NSString *fileName = [[NSBundle bundleForClass:self.class] pathForResource:@"IODProfanityWords" ofType:@"txt"];
         NSString *wordStr = [NSString stringWithContentsOfFile:fileName usedEncoding:&encoding error:&error];
         NSArray *wordArray = [wordStr componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
         IODProfanityFilterWordSet = [NSMutableSet setWithArray:wordArray];
