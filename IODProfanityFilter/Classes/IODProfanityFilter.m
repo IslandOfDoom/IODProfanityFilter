@@ -76,8 +76,10 @@ static NSMutableSet *IODProfanityFilterWordSet;
     NSArray *rangesToFilter = [self rangesOfFilteredWordsInString:string];
     for (NSValue *rangeValue in rangesToFilter) {
         NSRange range = [rangeValue rangeValue];
+        NSRange replacementRange = NSMakeRange(0, MIN(replacementString.length,range.length));
+        replacementRange = [replacementString rangeOfComposedCharacterSequencesForRange:replacementRange]; // Unicode characters, keep them from getting chopped
         NSString *replacement = [@"" stringByPaddingToLength:range.length withString:replacementString startingAtIndex:0];
-        [result replaceCharactersInRange:range withString:replacement];
+        [result replaceCharactersInRange:range withString:[replacementString substringWithRange:replacementRange]];
     }
     
     return result;
