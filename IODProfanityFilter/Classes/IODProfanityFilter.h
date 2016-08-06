@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Island of Doom Software Inc. All rights reserved.
 //
 
+#define PROFANITY_FILTER_AVAILABLE
+
 @interface IODProfanityFilter : NSObject
 
 /**

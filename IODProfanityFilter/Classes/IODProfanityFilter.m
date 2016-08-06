@@ -19,7 +19,7 @@ static NSMutableSet *IODProfanityFilterWordSet;
     {
         NSStringEncoding encoding;
         NSError *error;
-        NSString *fileName = [[NSBundle mainBundle] pathForResource:@"IODProfanityWords" ofType:@"txt"];
+        NSString *fileName = [[NSBundle bundleForClass:self.class] pathForResource:@"IODProfanityWords" ofType:@"txt"];
         NSString *wordStr = [NSString stringWithContentsOfFile:fileName usedEncoding:&encoding error:&error];
         NSArray *wordArray = [wordStr componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
         IODProfanityFilterWordSet = [NSMutableSet setWithArray:wordArray];
@@ -76,8 +76,9 @@ static NSMutableSet *IODProfanityFilterWordSet;
     NSArray *rangesToFilter = [self rangesOfFilteredWordsInString:string];
     for (NSValue *rangeValue in rangesToFilter) {
         NSRange range = [rangeValue rangeValue];
-        NSString *replacement = [@"" stringByPaddingToLength:range.length withString:replacementString startingAtIndex:0];
-        [result replaceCharactersInRange:range withString:replacement];
+        NSRange replacementRange = NSMakeRange(0, MIN(replacementString.length,range.length));
+        replacementRange = [replacementString rangeOfComposedCharacterSequencesForRange:replacementRange]; // Unicode characters, keep them from getting chopped
+        [result replaceCharactersInRange:range withString:[replacementString substringWithRange:replacementRange]];
     }
     
     return result;
